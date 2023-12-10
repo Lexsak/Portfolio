@@ -1,5 +1,5 @@
 <nav>
-    <ul *ngFor="let link of navLinks">
-       <li><a href="{{link.anchor}}">{{link.text}}</a></li> 
+    <ul>
+       <li *ngFor="let link of navLinks"><a href="{{link.anchor}}">{{link.text}}</a></li> 
     </ul>
 </nav>
