@@ -1,0 +1,31 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-info {
+  width: 487px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--black50);
+  margin-bottom: 24px;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 4%;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: justify;
+}

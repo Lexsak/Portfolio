@@ -13,12 +13,6 @@ header {
   align-items: center;
 }
 
-/* .hero-text{
-    display: flex;
-    flex-direction: column;
-    gap: ;
-} */
-
 p span {
   font-size: 32px;
   color: var(--black75);
