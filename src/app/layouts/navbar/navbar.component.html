@@ -1,1 +1,5 @@
-<p>navbar works!</p>
+<nav>
+    <ul *ngFor="let link of navLinks">
+       <li><a href="{{link.anchor}}">{{link.text}}</a></li> 
+    </ul>
+</nav>
