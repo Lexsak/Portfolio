@@ -57,6 +57,9 @@ button:hover {
   background-color: var(--black);
   color: var(--white);
 }
+.btn-hidden{
+display: none;
+}
 
 .hero-img img {
   border-radius: 100%;
@@ -78,6 +81,7 @@ button:hover {
 }
 
 /* Media Query */
+/* 1300px */
 @media (max-width: 1300px) {
   p span {
     font-size: 24px;
@@ -102,5 +106,32 @@ button:hover {
 
   .hero-img img {
     width: 300px;
+  }
+}
+
+/* 950px */
+@media (max-width: 950px) {
+  .hero-container {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .hero-text{
+    margin-bottom: 48px;
+  }
+  .hero-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    margin-top: 24px;
+    display: none;
+  }
+  .btn-hidden{
+    display: block;
+  }
+  .arrow-icon{
+    margin-top: 56px;
   }
 }

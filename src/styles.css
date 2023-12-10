@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -44,8 +43,18 @@ main {
   justify-content: center;
 }
 
-@media  (max-width: 1300px) {
+/* Media */
+/* 1300px */
+@media (max-width: 1300px) {
   .container {
-  width: 900px;
+    width: 900px;
+  }
 }
+
+/* 950px */
+@media (max-width: 950px) {
+  .container {
+    width: auto;
+    height: auto;
+  }
 }
