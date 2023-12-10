@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+
+:root{
+    --black: rgb(0, 0, 0);
+    --black75: rgba(0, 0, 0, .75);
+    --black50: rgba(0, 0, 0, .50);
+    --link: rgb(0, 117, 255);
+    --white: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
