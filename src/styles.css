@@ -15,10 +15,10 @@
     box-sizing: border-box;
 }
 
-body{
+body, button{
     font-family: 'JetBrains Mono', monospace;
-
 }
+
 
 main{
     width: 100%;
