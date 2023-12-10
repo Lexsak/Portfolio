@@ -43,3 +43,9 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+@media  (max-width: 1300px) {
+  .container {
+  width: 900px;
+}
+}
