@@ -1,0 +1,94 @@
+.container-projects {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+hr {
+  width: 100%;
+  height: 4px;
+  background-color: var(--black);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card-container {
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--black);
+}
+.card-image {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+}
+.card-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.tag-container {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  padding: 8px;
+  border-bottom: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+}
+.info-container h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.info-container p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.project-btn-container {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-live,
+.btn-github {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.btn-live, .btn-github:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn-live:hover, .btn-github{
+    background-color: var(--white);
+    color: var(--black);
+}
+
