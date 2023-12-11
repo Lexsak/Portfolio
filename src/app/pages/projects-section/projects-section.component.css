@@ -20,6 +20,7 @@ hr {
 
 .cards-container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .card-container {
@@ -31,7 +32,7 @@ hr {
 }
 .card-image {
   position: relative;
-  width: 350px;
+  width: 349px;
   height: 250px;
   overflow: hidden;
 }
@@ -44,11 +45,14 @@ hr {
 
 .tag-container {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
   text-transform: uppercase;
   padding: 8px;
   border-bottom: 1px solid var(--black);
   border-top: 1px solid var(--black);
+}
+.tag-container p{
+  margin-right: 8px;
 }
 
 .info-container {
@@ -75,11 +79,13 @@ hr {
 
 .btn-live,
 .btn-github {
+  text-decoration: none;
   padding: 10px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  border: 1px solid var(--black);
 }
 
 .btn-live, .btn-github:hover{

@@ -6,56 +6,18 @@
 
     <!-- Projects Cards -->
     <div class="cards-container">
-        <!-- project 1 -->
-        <div class="card-container">
-            <div class="card-image"> <img src="../../../assets/images/ang-blog.png" alt="ang-blog"></div>
+        <!-- projects -->
+        <div class="card-container" *ngFor="let card of cardsProject">
+            <div class="card-image"> <img src={{card.image}} alt={{card.title}}></div>
             <div class="tag-container">
-                <p>ANGUlar</p>
-                <p>FIREBASE</p>
-                <p>TYPESCRIPT</p>
+                <p  *ngFor="let oneTag of card.tag">{{oneTag}}</p>
             </div>
             <div class="info-container">
-                <h2>ANG-BLOG</h2>
-                <p>A blog with an admin panel where you can modify every element of the blog.</p>
+                <h2>{{card.title}}</h2>
+                <p>{{card.desc}}</p>
                 <div class="project-btn-container">
-                    <button class="btn-live">Live</button>
-                    <button class="btn-github">Github</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- projct 2  -->
-        <div class="card-container">
-            <div class="card-image"> <img src="../../../assets/images/prevac.png" alt="ang-blog"></div>
-            <div class="tag-container">
-                <p>ANGUlar</p>
-                <p>FIREBASE</p>
-                <p>TYPESCRIPT</p>
-            </div>
-            <div class="info-container">
-                <h2>ANG-BLOG</h2>
-                <p>A blog with an admin panel where you can modify every element of the blog.</p>
-                <div class="project-btn-container">
-                    <button class="btn-live">Live</button>
-                    <button class="btn-github">Github</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- project 3  -->
-        <div class="card-container">
-            <div class="card-image"> <img src="../../../assets/images/recipe-book.png" alt="ang-blog"></div>
-            <div class="tag-container">
-                <p>ANGUlar</p>
-                <p>FIREBASE</p>
-                <p>TYPESCRIPT</p>
-            </div>
-            <div class="info-container">
-                <h2>ANG-BLOG</h2>
-                <p>A blog with an admin panel where you can modify every element of the blog.</p>
-                <div class="project-btn-container">
-                    <button class="btn-live">Live</button>
-                    <button class="btn-github">Github</button>
+                    <a class="btn-live" href=''>Live</a>
+                    <a class="btn-github">Github</a>
                 </div>
             </div>
         </div>
