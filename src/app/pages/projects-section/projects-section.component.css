@@ -3,6 +3,7 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .projects-title {
@@ -51,7 +52,7 @@ hr {
   border-bottom: 1px solid var(--black);
   border-top: 1px solid var(--black);
 }
-.tag-container p{
+.tag-container p {
   margin-right: 8px;
 }
 
@@ -84,17 +85,76 @@ hr {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid var(--black);
 }
 
-.btn-live, .btn-github:hover{
-    background-color: var(--black);
-    color: var(--white);
+.btn-live,
+.btn-github:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
-.btn-live:hover, .btn-github{
-    background-color: var(--white);
-    color: var(--black);
+.btn-live:hover,
+.btn-github {
+  background-color: var(--white);
+  color: var(--black);
 }
 
+.more-info-container {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tools-container,
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+.tech-stack h2 {
+  width: 88px;
+}
+.tech-stack hr {
+  width: 2px;
+  height: 100%;
+  border: none;
+}
+
+.tech-stack img {
+  width: 32px;
+}
+
+.more-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-projects h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.git-link {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.git-link img {
+  width: 40px;
+}
+
+.git-link a {
+  color: var(--link);
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}

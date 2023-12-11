@@ -1,25 +1,61 @@
 <div class="container-projects" id="projects">
-    <div class="projects-title">
-        <h1>Projects</h1>
-        <hr>
-    </div>
+  <div class="projects-title">
+    <h1>Projects</h1>
+    <hr />
+  </div>
 
-    <!-- Projects Cards -->
-    <div class="cards-container">
-        <!-- projects -->
-        <div class="card-container" *ngFor="let card of cardsProject">
-            <div class="card-image"> <img src={{card.image}} alt={{card.title}}></div>
-            <div class="tag-container">
-                <p  *ngFor="let oneTag of card.tag">{{oneTag}}</p>
-            </div>
-            <div class="info-container">
-                <h2>{{card.title}}</h2>
-                <p>{{card.desc}}</p>
-                <div class="project-btn-container">
-                    <a class="btn-live" href=''>Live</a>
-                    <a class="btn-github">Github</a>
-                </div>
-            </div>
+  <!-- Projects Cards -->
+  <div class="cards-container">
+    <!-- projects -->
+    <div class="card-container" *ngFor="let card of cardsProject">
+      <div class="card-image">
+        <img src="{{ card.image }}" alt="{{ card.title }}" />
+      </div>
+      <div class="tag-container">
+        <p *ngFor="let oneTag of card.tag">{{ oneTag }}</p>
+      </div>
+      <div class="info-container">
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.desc }}</p>
+        <div class="project-btn-container">
+          <a class="btn-live" href="{{ card.liveLink }}" target="_blank"
+            >Live</a
+          >
+          <a
+            class="btn-github"
+            *ngIf="card.githubLink"
+            href="{{ card.githubLink }}"
+            target="_blank"
+            >Github</a
+          >
         </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Tech stack & more projects -->
+  <div class="more-info-container">
+    <div class="tech-stack">
+      <div class="skills-container">
+        <h2>Skills</h2>
+        <hr>
+        <img src={{skill}} alt={{i}} *ngFor="let skill of skills; index as i"/>
+      </div>
+      <div class="tools-container">
+        <h2>Tools</h2>
+        <hr>
+        <img src={{tool}} alt={{i}} *ngFor="let tool of tools; index as i"/>
+        
+      </div>
+    </div>
+    <div class="more-projects">
+      <h2>More Projects</h2>
+      <div class="git-link">
+        <img src="../../../assets/icons/github.svg" alt="github" />
+        <a href="https://github.com/Lexsak" target="_blank"
+          >https://github.com/Lexsak</a
+        >
+      </div>
+    </div>
+  </div>
 </div>
