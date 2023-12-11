@@ -67,7 +67,10 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
     gap: 56px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .message-container {
     display: flex;
@@ -84,8 +87,25 @@ p {
   .email-container h2 {
     font-size: 14px;
   }
-  .contact-info-container, .message-container {
+  .contact-info-container,
+  .message-container {
     width: 55%;
   }
-   
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  .email-container img {
+    width: 24px;
+  }
+  .message-container h2 {
+    font-size: 16px;
+  }
+  .email-container h2 {
+    font-size: 12px;
+  }
+  .contact-info-container,
+  .message-container {
+    width: 65%;
+  }
 }

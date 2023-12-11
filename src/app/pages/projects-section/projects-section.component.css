@@ -216,9 +216,32 @@ hr {
   .skills-container img {
     margin-right: 24px;
     margin-bottom: 8px;
-
   }
   .tech-stack {
     align-items: center;
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  .projects-title {
+    width: 70%;
+  }
+
+  .tools-container,
+  .skills-container {
+    width: 70%;
+  }
+
+  .more-projects h2 {
+    font-size: 30px;
+  }
+
+  .git-link img {
+   width: 34px;
+  }
+
+  .git-link a {
+   font-size: 18px;
   }
 }
