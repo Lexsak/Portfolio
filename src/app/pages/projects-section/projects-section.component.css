@@ -184,3 +184,18 @@ hr {
     border: none;
   }
 }
+
+/* 950px */
+@media (max-width: 950px) {
+  .container-projects{
+    margin-top: 500px;
+    align-items: center;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-title {
+    width: 80%;
+  }
+}
