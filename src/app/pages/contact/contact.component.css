@@ -51,3 +51,12 @@ p{
 .email-container img{
     width: 56px;
 }
+
+/* Media */
+
+/* 1300px */
+@media (max-width: 1300px){
+    .email-container h2{
+        font-size: 16px;
+    }
+}
