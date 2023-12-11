@@ -81,6 +81,7 @@ p {
 @media (max-width: 350px) {
   .about-container{
     padding-top: 48px;
+    margin-bottom: 152px;
   }
   .about-info, img {
     width: 240px;

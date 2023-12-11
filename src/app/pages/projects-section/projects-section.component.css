@@ -238,10 +238,32 @@ hr {
   }
 
   .git-link img {
-   width: 34px;
+    width: 34px;
   }
 
   .git-link a {
-   font-size: 18px;
+    font-size: 18px;
+  }
+}
+
+/* 350px */
+@media (max-width: 350px) {
+  
+  .card-container {
+    width: 250px;
+  }
+  .card-image {
+    width: 249px;
+  }
+  .more-projects h2 {
+    font-size: 24px;
+  }
+
+  .git-link img {
+    width: 26px;
+  }
+
+  .git-link a {
+    font-size: 14px;
   }
 }

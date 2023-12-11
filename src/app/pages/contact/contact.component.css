@@ -109,3 +109,21 @@ p {
     width: 65%;
   }
 }
+
+
+/* 350px */
+@media (max-width: 350px) {
+  .contact-info-container,
+  .message-container {
+    width: 75%;
+  }
+  .email-container img {
+    width: 20px;
+  }
+  .message-container h2 {
+    font-size: 14px;
+  }
+  .email-container h2 {
+    font-size: 10px;
+  }
+}
