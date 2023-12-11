@@ -42,3 +42,22 @@ a::after {
 a:hover::after {
   width: 100%;
 }
+
+img {
+  display: none;
+}
+
+/* Media */
+
+@media (max-width: 500px) {
+  nav {
+    justify-content: end;
+  }
+  ul {
+    display: none;
+  }
+  img {
+    margin-right: 24px;
+    display: block;
+  }
+}

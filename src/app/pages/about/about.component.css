@@ -56,16 +56,33 @@ p {
 
 /* 950px */
 @media (max-width: 950px) {
-  .about-container{
+  .about-container {
     margin-top: 100px;
     flex-direction: column;
   }
-  .about-info{
+  .about-info {
     order: 1;
     width: 400px;
     margin-bottom: 32px;
   }
-  img{
+  img {
     order: 2;
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  .about-info, img {
+    width: 295px;
+  }
+}
+
+/* 350px */
+@media (max-width: 350px) {
+  .about-container{
+    padding-top: 48px;
+  }
+  .about-info, img {
+    width: 240px;
   }
 }
