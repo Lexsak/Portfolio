@@ -1,0 +1,53 @@
+.container-info{
+    justify-content: space-between;
+    height: 80vh;
+}
+.contact-info-container{
+    width: 45%;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+h1{
+  font-size: 48px;
+font-weight: 700;
+}
+hr {
+  width: 100%;
+  height: 3px;
+  border: none;
+  background-color: var(--black);
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.message-container{
+    width: 45%;
+    border: 1px solid var(--black);
+    padding: 16px;
+}
+
+.message-container h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.email-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    margin-left: -4px;   
+}
+
+.email-container img{
+    width: 56px;
+}
