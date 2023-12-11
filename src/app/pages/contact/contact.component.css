@@ -1,9 +1,9 @@
-.container-info{
-    justify-content: space-between;
-    height: 80vh;
+.container-info {
+  justify-content: space-between;
+  height: 80vh;
 }
-.contact-info-container{
-    width: 45%;
+.contact-info-container {
+  width: 45%;
 }
 
 .contact-title {
@@ -13,9 +13,9 @@
   width: 100%;
   margin-bottom: 32px;
 }
-h1{
+h1 {
   font-size: 48px;
-font-weight: 700;
+  font-weight: 700;
 }
 hr {
   width: 100%;
@@ -23,42 +23,42 @@ hr {
   border: none;
   background-color: var(--black);
 }
-p{
-    text-align: justify;
-    font-size: 20px;
-    font-weight: 400;
+p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.message-container{
-    width: 45%;
-    border: 1px solid var(--black);
-    padding: 16px;
+.message-container {
+  width: 45%;
+  border: 1px solid var(--black);
+  padding: 16px;
 }
 
-.message-container h2{
-    font-size: 24px;
-    font-weight: 700;
+.message-container h2 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.email-container{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 16px;
-    margin-left: -4px;   
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  margin-left: -4px;
 }
 
-.email-container img{
-    width: 56px;
+.email-container img {
+  width: 56px;
 }
 
 /* Media */
 
 /* 1300px */
-@media (max-width: 1300px){
-    .email-container h2{
-        font-size: 16px;
-    }
+@media (max-width: 1300px) {
+  .email-container h2 {
+    font-size: 16px;
+  }
 }
 
 /* 950px */
@@ -69,9 +69,23 @@ p{
     justify-content: center;
     gap: 56px;
   }
-  .message-container{
+  .message-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* 750px */
+@media (max-width: 750px) {
+  .email-container img {
+    width: 32px;
+  }
+  .email-container h2 {
+    font-size: 14px;
+  }
+  .contact-info-container, .message-container {
+    width: 55%;
+  }
+   
 }

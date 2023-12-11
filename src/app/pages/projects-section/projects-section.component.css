@@ -187,7 +187,7 @@ hr {
 
 /* 950px */
 @media (max-width: 950px) {
-  .container-projects{
+  .container-projects {
     margin-top: 500px;
     align-items: center;
   }
@@ -196,6 +196,29 @@ hr {
     align-items: center;
   }
   .projects-title {
-    width: 80%;
+    width: 50%;
+  }
+}
+
+/* 750px */
+@media (max-width: 750px) {
+  .tools-container,
+  .skills-container {
+    width: 55%;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .tools-container h2,
+  .tools-container hr,
+  .tools-container img,
+  .skills-container h2,
+  .skills-container hr,
+  .skills-container img {
+    margin-right: 24px;
+    margin-bottom: 8px;
+
+  }
+  .tech-stack {
+    align-items: center;
   }
 }
