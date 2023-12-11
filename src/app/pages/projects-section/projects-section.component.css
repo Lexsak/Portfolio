@@ -24,6 +24,7 @@ hr {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card-container {
   width: 350px;
@@ -158,4 +159,28 @@ hr {
   font-size: 20px;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Media */
+
+/* 1300px */
+@media (max-width: 1300px) {
+  .container-projects {
+    height: auto;
+  }
+  .cards-container {
+    gap: 48px;
+  }
+  .more-info-container {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .tech-stack hr {
+    width: 2px;
+    height: auto;
+    border: none;
+  }
 }
