@@ -46,6 +46,15 @@ img {
   display: none;
 }
 
+/* Dropdown Menu */
+.drop-down-menu{
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--white);
+}
+
 /* Media */
 
 @media (max-width: 500px) {

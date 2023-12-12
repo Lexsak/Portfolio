@@ -17,4 +17,6 @@ export class NavbarComponent {
     { anchor: '#projects', text: 'Projects' },
     { anchor: '#contact', text: 'Contact' },
   ];
+
+  
 }
