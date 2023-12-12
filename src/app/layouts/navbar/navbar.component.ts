@@ -1,4 +1,11 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from '@angular/animations';
 
 interface navLinks {
   anchor: string;
@@ -9,6 +16,12 @@ interface navLinks {
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0 })),
+      transition(':enter, :leave', [animate('1000ms', style({ opacity: 1 }))]),
+    ]),
+  ],
 })
 export class NavbarComponent {
   navLinks: navLinks[] = [

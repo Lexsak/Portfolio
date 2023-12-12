@@ -14,7 +14,7 @@ import {
   animations: [
     trigger('fadeIn', [
       state('void', style({ opacity: 0 })),
-      transition(':enter, :leave', [animate('500ms', style({ opacity: 1 }))]),
+      transition(':enter, :leave', [animate('1000ms', style({ opacity: 1 }))]),
     ]),
   ],
 })
