@@ -5,5 +5,10 @@
     <img src="../../../assets/icons/navbar-icon.svg" alt="menu" width="48">
 </nav>
 <div class="drop-down-menu">
-    
+    <div class="close-menu">
+        <h1>Close</h1>
+    </div>
+    <ul>
+       <li *ngFor="let link of navLinks"><a href="{{link.anchor}}">{{link.text}}</a></li> 
+    </ul>
 </div>
