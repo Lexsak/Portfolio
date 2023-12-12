@@ -1,6 +1,6 @@
 .about-container {
-  height: 100%;
   width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +56,11 @@ p {
 
 /* 950px */
 @media (max-width: 950px) {
+  .container-info {
+    height: 50vh;
+  }
   .about-container {
-    margin-top: 100px;
+    margin-top: 184px;
     flex-direction: column;
   }
   .about-info {
@@ -72,18 +75,19 @@ p {
 
 /* 500px */
 @media (max-width: 500px) {
-  .about-info, img {
+  .about-info,
+  img {
     width: 295px;
   }
 }
 
 /* 350px */
 @media (max-width: 350px) {
-  .about-container{
+  .about-container {
     padding-top: 48px;
-    margin-bottom: 152px;
   }
-  .about-info, img {
+  .about-info,
+  img {
     width: 240px;
   }
 }
