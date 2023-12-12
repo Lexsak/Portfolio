@@ -9,7 +9,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsSectionComponent } from './pages/projects-section/projects-section.component';
-import { DropDownMenuComponent } from './layouts/drop-down-menu/drop-down-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { DropDownMenuComponent } from './layouts/drop-down-menu/drop-down-menu.c
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ProjectsSectionComponent,
-    DropDownMenuComponent
+    ProjectsSectionComponent
   ],
   imports: [
     BrowserModule,
