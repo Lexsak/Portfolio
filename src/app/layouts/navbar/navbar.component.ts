@@ -18,5 +18,13 @@ export class NavbarComponent {
     { anchor: '#contact', text: 'Contact' },
   ];
 
-  
+  isActive: boolean = false;
+
+  closeMenu() {
+    this.isActive = false;
+  }
+
+  openMenu() {
+    this.isActive = true;
+  }
 }
