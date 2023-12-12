@@ -1,9 +1,6 @@
 # Portfolio 
 
 ## Things To Do
-- create components
-- first create phone version
-- create desktop version
 - add animations
 - add lazy loading with this animation FrontEnd/Design/Bartosz...
 
