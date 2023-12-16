@@ -1,22 +1,24 @@
 import {
   Directive,
+  Input,
   ElementRef,
-  EventEmitter,
-  Output,
   Renderer2,
+  OnInit,
+  Output,
+  EventEmitter,
 } from '@angular/core';
 
 @Directive({
   selector: '[appFadeOut]',
 })
-export class FadeOutDirective {
-  delay: number = 7000;
+export class FadeOutDirective implements OnInit {
+  @Input() delay: number = 7000; 
   @Output() fadeOutComplete: EventEmitter<boolean> =
     new EventEmitter<boolean>();
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
-  ngAfterViewInit() {
+  ngOnInit() {
     setTimeout(() => {
       this.fadeOut();
     }, this.delay);
@@ -26,13 +28,11 @@ export class FadeOutDirective {
     this.renderer.setStyle(
       this.el.nativeElement,
       'transition',
-      'transform 0.1s ease-in-out'
+      'opacity 1s ease-in-out'
     );
-    this.renderer.setStyle(
-      this.el.nativeElement,
-      'transform',
-      'translateY(-100%)'
-    );
-    this.fadeOutComplete.emit(true);
+    this.renderer.setStyle(this.el.nativeElement, 'opacity', '0');
+    setTimeout(() => {
+      this.fadeOutComplete.emit(true);
+    }, 500);
   }
 }
