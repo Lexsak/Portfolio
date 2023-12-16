@@ -26,9 +26,13 @@ export class FadeOutDirective {
     this.renderer.setStyle(
       this.el.nativeElement,
       'transition',
-      'opacity 1s ease-in-out'
+      'transform 0.1s ease-in-out'
     );
-    this.renderer.setStyle(this.el.nativeElement, 'opacity', '0');
+    this.renderer.setStyle(
+      this.el.nativeElement,
+      'transform',
+      'translateY(-100%)'
+    );
     this.fadeOutComplete.emit(true);
   }
 }
