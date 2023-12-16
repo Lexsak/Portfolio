@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-portfolio';
+
+  isFadeOut: boolean = false;
+
+  onFadeOutComplete(event: boolean) {
+    this.isFadeOut = event;
+  }
 }
