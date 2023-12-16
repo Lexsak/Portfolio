@@ -1,4 +1,4 @@
-<app-fade-out-animation  (fadeOutComplete)="onFadeOutComplete($event)" appFadeOut class="fade-out-animation"></app-fade-out-animation>
+<app-fade-out-animation  (fadeOutComplete)="onFadeOutComplete($event)" appFadeOut class="fade-out-animation" *ngIf="!isFadeOut"></app-fade-out-animation>
 <div  *ngIf="isFadeOut">
     <app-navbar></app-navbar>
     <main>
