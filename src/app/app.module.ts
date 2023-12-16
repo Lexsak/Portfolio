@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsSectionComponent } from './pages/projects-section/projects-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FadeOutDirective } from './fade-out.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     ContactComponent,
     ProjectsSectionComponent,
+    FadeOutDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
