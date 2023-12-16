@@ -10,7 +10,7 @@ import {
   selector: '[appFadeOut]',
 })
 export class FadeOutDirective {
-  delay: number = 1000;
+  delay: number = 7000;
   @Output() fadeOutComplete: EventEmitter<boolean> =
     new EventEmitter<boolean>();
 
