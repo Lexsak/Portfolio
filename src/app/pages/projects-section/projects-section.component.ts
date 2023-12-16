@@ -19,7 +19,7 @@ export class ProjectsSectionComponent {
     {
       title: 'ANG-BLOG',
       desc: 'A blog with an admin panel where you can modify every element of the blog.',
-      image: '../../../assets/images/ang-blog.png',
+      image: './assets/images/ang-blog.png',
       tag: ['ANGULAR', 'FIREBASE', 'TYPESCRIPT'],
       liveLink: 'https://angular-blog-4c2c0.web.app/',
       githubLink: 'https://github.com/Lexsak/blog-angular',
@@ -27,7 +27,7 @@ export class ProjectsSectionComponent {
     {
       title: 'PREVAC',
       desc: 'Prevac home page.',
-      image: '../../../assets/images/prevac.png',
+      image: './assets/images/prevac.png',
       tag: ['WORDPRESS'],
       liveLink: 'https://prevac.pl/',
       githubLink: '',
@@ -35,7 +35,7 @@ export class ProjectsSectionComponent {
     {
       title: 'RECIPE-BOOK',
       desc: 'Recipe book with login panel and fetching data.',
-      image: '../../../assets/images/recipe-book.png',
+      image: './assets/images/recipe-book.png',
       tag: ['ANGULAR', 'FIREBASE', 'TYPESCRIPT', 'bootstrap'],
       liveLink: 'https://ng-recipe-book-e4619.web.app',
       githubLink: 'https://github.com/Lexsak/recipe-book-angular',
@@ -43,19 +43,19 @@ export class ProjectsSectionComponent {
   ];
 
   skills: string[] = [
-    '../../../assets/icons/html.svg',
-    '../../../assets/icons/css.svg',
-    '../../../assets/icons/js.svg',
-    '../../../assets/icons/typescript.svg',
-    '../../../assets/icons/angular.svg',
-    '../../../assets/icons/react.svg',
-    '../../../assets/icons/wordpress.svg',
-    '../../../assets/icons/playwright.svg',
+    './assets/icons/html.svg',
+    './assets/icons/css.svg',
+    './assets/icons/js.svg',
+    './assets/icons/typescript.svg',
+    './assets/icons/angular.svg',
+    './assets/icons/react.svg',
+    './assets/icons/wordpress.svg',
+    './assets/icons/playwright.svg',
   ];
 
   tools: string[] = [
-    '../../../assets/icons/visual-studio-code.svg',
-    '../../../assets/icons/figma.svg',
-    '../../../assets/icons/github.svg',
+    './assets/icons/visual-studio-code.svg',
+    './assets/icons/figma.svg',
+    './assets/icons/github.svg',
   ];
 }
