@@ -1,7 +1,8 @@
 import {
   Directive,
-  Input,
   ElementRef,
+  EventEmitter,
+  Output,
   Renderer2,
 } from '@angular/core';
 
@@ -9,7 +10,9 @@ import {
   selector: '[appFadeOut]',
 })
 export class FadeOutDirective {
-  @Input() delay: number = 1000; // 10 sekund opóźnienia (możesz dostosować wartość)
+  delay: number = 1000;
+  @Output() fadeOutComplete: EventEmitter<boolean> =
+    new EventEmitter<boolean>();
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
@@ -26,5 +29,6 @@ export class FadeOutDirective {
       'opacity 1s ease-in-out'
     );
     this.renderer.setStyle(this.el.nativeElement, 'opacity', '0');
+    this.fadeOutComplete.emit(true);
   }
 }
