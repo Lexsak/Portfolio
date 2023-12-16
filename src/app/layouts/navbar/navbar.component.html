@@ -2,7 +2,7 @@
     <ul>
        <li *ngFor="let link of navLinks"><a href="{{link.anchor}}">{{link.text}}</a></li> 
     </ul>
-    <img src="../../../assets/icons/navbar-icon.svg" alt="menu" width="48" (click)="openMenu()">
+    <img src="./assets/icons/navbar-icon.svg" alt="menu" width="48" (click)="openMenu()">
 </nav>
 <div [ngClass]="{'active': isActive, 'inactive': !isActive}" class="drop-down-menu">
     <div class="container-menu">
