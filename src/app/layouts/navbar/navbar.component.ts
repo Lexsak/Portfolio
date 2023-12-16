@@ -19,7 +19,7 @@ interface navLinks {
   animations: [
     trigger('fadeIn', [
       state('void', style({ opacity: 0 })),
-      transition(':enter, :leave', [animate('1000ms', style({ opacity: 1 }))]),
+      transition(':enter, :leave', [animate('2000ms', style({ opacity: 1 }))]),
     ]),
   ],
 })
@@ -40,4 +40,6 @@ export class NavbarComponent {
   openMenu() {
     this.isActive = true;
   }
+
+  
 }
