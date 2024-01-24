@@ -19,7 +19,7 @@ export class ProjectsSectionComponent {
     {
       title: 'CHOOSE-COLOR',
       desc: 'Website that will help you choose a color palette.',
-      image: './assets/images/ang-blog.png',
+      image: './assets/images/choose-color.png',
       tag: ['ANGULAR', 'TYPESCRIPT'],
       liveLink: 'https://lexsak.github.io/choose-color/',
       githubLink: 'https://github.com/Lexsak/choose-color',
