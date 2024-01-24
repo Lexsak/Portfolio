@@ -17,12 +17,12 @@ interface cardProject {
 export class ProjectsSectionComponent {
   cardsProject: cardProject[] = [
     {
-      title: 'ANG-BLOG',
-      desc: 'A blog with an admin panel where you can modify every element of the blog.',
+      title: 'CHOOSE-COLOR',
+      desc: 'Website that will help you choose a color palette.',
       image: './assets/images/ang-blog.png',
-      tag: ['ANGULAR', 'FIREBASE', 'TYPESCRIPT'],
-      liveLink: 'https://angular-blog-4c2c0.web.app/',
-      githubLink: 'https://github.com/Lexsak/blog-angular',
+      tag: ['ANGULAR', 'TYPESCRIPT'],
+      liveLink: 'https://lexsak.github.io/choose-color/',
+      githubLink: 'https://github.com/Lexsak/choose-color',
     },
     {
       title: 'PREVAC',
@@ -49,6 +49,8 @@ export class ProjectsSectionComponent {
     './assets/icons/typescript.svg',
     './assets/icons/angular.svg',
     './assets/icons/react.svg',
+    './assets/icons/tailwindcss.svg',
+    './assets/icons/bootstrap.svg',
     './assets/icons/wordpress.svg',
     './assets/icons/playwright.svg',
   ];
