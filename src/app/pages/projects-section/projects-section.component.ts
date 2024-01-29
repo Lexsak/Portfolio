@@ -47,6 +47,7 @@ export class ProjectsSectionComponent {
     './assets/icons/css.svg',
     './assets/icons/js.svg',
     './assets/icons/typescript.svg',
+    './assets/icons/php-logo.svg',
     './assets/icons/angular.svg',
     './assets/icons/react.svg',
     './assets/icons/tailwindcss.svg',
